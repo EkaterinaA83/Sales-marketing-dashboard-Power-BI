@@ -38,8 +38,8 @@ interactive report that management can use without touching the underlying data.
 
 ## Files
 
-- `sales_marketing_dashboard.pbix` — the Power BI report
-- `source_data.accdb` — the underlying Access database used to build the data model
+- (sales_marketing_dashboard.pbix) — the Power BI report
+- (source_data.accdb) — the underlying Access database used to build the data model
 
 ## Tools
 
