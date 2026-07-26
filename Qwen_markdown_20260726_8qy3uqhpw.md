@@ -1,0 +1,64 @@
+# Sales & Marketing Performance Dashboard — Power BI
+
+Capstone project: analyze several years of orders and completed projects for a digital-marketing
+agency and deliver a decision-ready Power BI report for management.
+
+## Objective
+The agency owner provided a multi-year database export of client orders and completed projects.
+The brief: build a data model, calculate a defined set of business measures, and deliver an
+interactive report that management can use without touching the underlying data.
+
+## Data model
+- Loaded the source tables into Power BI and defined the relationships between them
+- Built a custom calendar table (year, month, month number, weekday name, weekday number) and linked
+  it to the transactional data, with the calendar sorted by month number rather than month name
+
+## Measures (DAX)
+- Share of revenue by acquisition channel (social/marketing source), relative to total revenue across
+  all sources
+- Client count for a specific month (October 2021)
+- Project ranking by revenue
+- Share of revenue by account manager, relative to total revenue
+- Total revenue for the top 3 cities by sales
+- All measures grouped into a dedicated measures table, kept off the report canvas
+
+## Report
+Multi-page interactive report including:
+- a ranked table of projects
+- a bar chart of revenue share by account manager
+- a pie chart of revenue share by project, with decluttered labels
+- a map visual of sales by geography, with conditional formatting from lowest (red) to highest (blue)
+- a KPI gauge for October revenue
+- a call-out panel for the top 3 cities by revenue
+- cross-filtering configured so the manager-revenue chart does not affect the project-ranking table
+
+## Files
+- `sales_marketing_dashboard.pbix` — the Power BI report
+- `source_data.accdb` — the underlying Access database used to build the data model
+- `report_screenshots/` — (add before publishing — see note below)
+
+## To finish before publishing
+`.pbix` files can't be previewed in a browser — recruiters won't open Power BI Desktop just to see
+the work. Before pushing this folder to GitHub:
+1. Open the report in Power BI Desktop.
+2. Export each report page as an image (or `File → Export → PDF` for all pages at once).
+3. Save them into a `report_screenshots/` folder here (e.g. `page-1-overview.png`, `page-2-map.png`).
+4. Add 1–2 of those images directly into this README with `![Overview page](report_screenshots/page-1-overview.png)` so the dashboard is visible without opening any file.
+
+## Tools
+Power BI Desktop · DAX · Power Query · Microsoft Access
+
+---
+
+## My Other Projects
+
+Here are links to my other data analytics and data science repositories:
+
+* **[Customer Segmentation — Statistical Significance Analysis](https://github.com/EkaterinaA83/Customer-segmentation-statistical-analysis)**
+  Statistical analysis using Python (ANOVA, Tukey HSD) to evaluate whether a four-segment customer classification should be redesigned or further split by education level.
+* **[Automated Invoice Reconciliation Tool](https://github.com/EkaterinaA83/Invoice-reconciliation-automation)**
+  A Python/Pandas automation that replaces a manual monthly reconciliation process between EDI invoices and supplier delivery notes, built and used in a live operational role.
+* **[Retail Sales & Margin Analysis](https://github.com/EkaterinaA83/Retail-sales-ABC-margin-analysis)**
+  A Python-based exploratory analysis of a grocery retailer's product catalog and order history, including ABC-analysis, margin calculations, and promo penetration metrics.
+* **[DataScience](https://github.com/EkaterinaA83/DataScience)**
+  Forked repository for educational purposes and continuous learning.
