@@ -40,17 +40,8 @@ interactive report that management can use without touching the underlying data.
 
 - `sales_marketing_dashboard.pbix` — the Power BI report
 - `source_data.accdb` — the underlying Access database used to build the data model
-- `report_screenshots/` — *(add before publishing — see note below)*
+- `report_screenshots/` — `![Overview page](report_screenshots/page-1-overview.png)`
 
-## To finish before publishing
-
-`.pbix` files can't be previewed in a browser — recruiters won't open Power BI Desktop just to see
-the work. Before pushing this folder to GitHub:
-
-1. Open the report in Power BI Desktop.
-2. Export each report page as an image (or `File → Export → PDF` for all pages at once).
-3. Save them into a `report_screenshots/` folder here (e.g. `page-1-overview.png`, `page-2-map.png`).
-4. Add 1–2 of those images directly into this README with `![Overview page](report_screenshots/page-1-overview.png)` so the dashboard is visible without opening any file.
 
 ## Tools
 
