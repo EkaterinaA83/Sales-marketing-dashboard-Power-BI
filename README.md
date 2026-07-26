@@ -40,7 +40,7 @@ interactive report that management can use without touching the underlying data.
 
 - `sales_marketing_dashboard.pbix` — the Power BI report
 - `source_data.accdb` — the underlying Access database used to build the data model
-- `report_screenshots/` — `![Overview page](report_screenshots/page-1-overview.png)`
+- `report_screenshots/` 
 
 
 ## Tools
